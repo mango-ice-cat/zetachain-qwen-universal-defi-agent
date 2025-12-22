@@ -5,8 +5,8 @@
 ## 功能概览
 
 - AI 意图解析与策略生成（支持 fallback 解析器）
-- 资产与协议数据聚合（当前以 mock 数据为主）
-- 策略执行流程（执行与跟踪接口，当前为 mock）
+- 资产与协议数据聚合
+- 策略执行流程（执行与跟踪接口）
 - Socket.io 实时推送策略与执行结果
 - SQLite 记录交易与策略相关信息
 - 前端仪表盘、聊天界面、策略预览与监控面板
@@ -73,11 +73,11 @@ npm run dev
 
 后端接口（部分）：
 - `GET /health` 健康检查
-- `GET /api/assets/:address` 资产概览（mock）
-- `GET /api/protocols` 协议列表（mock）
+- `GET /api/assets/:address` 资产概览
+- `GET /api/protocols` 协议列表
 - `POST /api/chat/strategy` 生成策略
 - `POST /api/strategy/prepare` 生成前端签名所需交易
-- `POST /api/strategy/execute` 执行策略（mock）
+- `POST /api/strategy/execute` 执行策略
 - `POST /api/strategy/track` 跟踪跨链状态
 - `GET /api/transactions/:address` 交易记录
 - `POST /api/transactions` 写入交易记录
